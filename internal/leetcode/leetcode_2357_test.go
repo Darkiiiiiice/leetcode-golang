@@ -34,8 +34,15 @@ func TestLeetCode2357_MinimumOperations(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := LeetCode2357_MinimumOperations(tt.args.nums); got != tt.want {
-				t.Errorf("LeetCode2357_MinimumOperations() = %v, want %v", got, tt.want)
+			if got := LeetCode2357_MinimumOperations_Hash(tt.args.nums); got != tt.want {
+				t.Errorf("LeetCode2357_MinimumOperations_Hash() = %v, want %v", got, tt.want)
+			}
+		})
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := LeetCode2357_MinimumOperations_Array(tt.args.nums); got != tt.want {
+				t.Errorf("LeetCode2357_MinimumOperations_Array() = %v, want %v", got, tt.want)
 			}
 		})
 	}

@@ -2,7 +2,7 @@ package leetcode
 
 import "sort"
 
-// LeetCode2357_MinimumOperations 使数组中所有元素都等于零
+// LeetCode2357_MinimumOperations_Hash 使数组中所有元素都等于零
 // 给你一个非负整数数组 nums 。在一步操作中，你必须：
 // * 选出一个正整数 x ，x 需要小于或等于 nums 中 最小 的 非零 元素。
 // * nums 中的每个正整数都减去 x。
@@ -10,7 +10,7 @@ import "sort"
 // PS:
 // 1. 1 <= nums.length <= 100
 // 2. 0 <= nums[i] <= 100
-func LeetCode2357_MinimumOperations(nums []int) int {
+func LeetCode2357_MinimumOperations_Hash(nums []int) int {
 
 	if len(nums) == 0 {
 		return 0
